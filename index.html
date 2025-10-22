@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wolf Electrical Bournemouth | NICEIC Domestic Installer</title>
+  <meta name="description" content="Electrical installation, maintenance, testing & certification, and fault finding across Bournemouth. NICEIC Domestic Installer." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <img src="assets/logo.png" alt="Wolf Electrical Bournemouth logo" />
+        <span>Wolf Electrical Bournemouth</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Reliable Electrical Services in Bournemouth</h1>
+          <p>Installation • Maintenance • Testing &amp; Certification • Fault Finding</p>
+          <div class="cta">
+            <a class="btn" href="tel:07920002881">Call 07920&nbsp;002&nbsp;881</a>
+            <a class="btn btn-outline" href="mailto:info@wolfelectricalbournemouth.co.uk">Email Us</a>
+            <a class="btn btn-muted" href="https://wa.me/447920002881" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <img src="assets/logo.png" alt="Wolf Electrical Logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Wolf Electrical Bournemouth provides friendly, professional domestic electrical work across Bournemouth. We focus on safe, tidy workmanship and clear communication from first quote to final certification.</p>
+        <ul class="ticks">
+          <li>Local, reliable, and fully insured</li>
+          <li>NICEIC Domestic Installer</li>
+          <li>Transparent pricing and clear timeframes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Electrical Installation</h3>
+            <p>New circuits, consumer unit upgrades, lighting, sockets, EV charge-ready wiring, extensions &amp; renovations.</p>
+          </article>
+          <article class="card">
+            <h3>Maintenance</h3>
+            <p>Repairs, upgrades, and preventative maintenance to keep your electrics safe and reliable.</p>
+          </article>
+          <article class="card">
+            <h3>Testing &amp; Certification</h3>
+            <p>EICRs (landlord &amp; homeowner), minor works, installation certificates, and Part P notifications.</p>
+          </article>
+          <article class="card">
+            <h3>Fault Finding</h3>
+            <p>Systematic diagnosis and repair of tripping circuits, power loss, and safety issues.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2>Certifications</h2>
+        <p>We are <strong>NICEIC Domestic Installer</strong> certified. All work is carried out to the latest Wiring Regulations (BS 7671), with documentation provided where required.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Service area:</strong> Bournemouth</p>
+            <p><strong>Phone:</strong> <a href="tel:07920002881">07920 002 881</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@wolfelectricalbournemouth.co.uk">info@wolfelectricalbournemouth.co.uk</a></p>
+            <p><strong>WhatsApp:</strong> <a target="_blank" rel="noopener" href="https://wa.me/447920002881">Message us</a></p>
+          </div>
+          <div class="contact-cta">
+            <p>Prefer a quick call? Tap below.</p>
+            <a class="btn btn-block" href="tel:07920002881">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Wolf Electrical Bournemouth. All rights reserved.</p>
+      <p>Bournemouth • NICEIC Domestic Installer</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
